@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<!--[if IE]>
+  <script type="text/javascript" src="javascript/excanvas/excanvas.js"></script>
+  <script type="text/javascript" src="javascript/excanvas/canvas.text.js"></script>
+  <script type="text/javascript" src="javascript/excanvas/faces/optimer-normal-normal.js"></script>
+  <![endif]--> 
+
+   <style>
+
+	p{
+		background-color: #FF0000;
+		font:30px 微软雅黑;
+		text-align: center;
+		margin: 0px;
+	}
+    
+/************************more than 1920X1080************************/
+/*	.main-content{
+		width: 50%;
+		height: 100%;
+		margin-left: 25%;
+	}
+	.main{
+		width: 200px;
+		border: 1px solid red;
+		height: 150px;
+		float: left;
+		margin-left: 20px;	
+		margin-top: 200px;
+	}
+*/	
+	
+/************************1920X1080************************/
+	.main-content{
+		width: 60%;
+		height: 100%;
+		margin-left: 20%;
+	}
+	.main{
+		width: 200px;
+		border: 1px solid red;
+		height: 150px;
+		float: left;
+		margin-left: 20px;	
+		margin-top: 200px;
+	}
+	
+	
+/************************1366X768************************/
+/*	.main-content{
+		width: 80%;
+		height: 100%;
+		margin-left: 10%;
+	}
+	.main{
+		width: 200px;
+		border: 1px solid red;
+		height: 150px;
+		float: left;
+		margin-left: 10px;	
+		margin-top: 100px;
+	}
+*/	
+
+	
+	body {
+	  background-image: url('2.JPG');
+	  background-repeat: no-repeat;
+	  background-attachment: fixed;
+	  background-size: cover;
+	}
+	
+    </style>
+
+</head>
+<body >
+
+<div class="main-content">
+	<div class ="main">
+		<p>刮刮乐</p>			
+		<canvas id="can1"></canvas>
+	</div>
+	
+	<div class ="main">
+		<p>刮刮乐</p>			
+		<canvas id="can2"></canvas>
+	</div>
+	
+	<div class ="main">
+		<p>刮刮乐</p>			
+		<canvas id="can3"></canvas>
+	</div>
+	
+	<div class ="main">
+		<p>刮刮乐</p>			
+		<canvas id="can4"></canvas>
+	</div>
+	
+	<div class ="main">
+		<p>刮刮乐</p>			
+		<canvas id="can5"></canvas>
+	</div>
+
+	<div class ="main">
+		<p>刮刮乐</p>			
+		<canvas id="can6"></canvas>
+	</div>
+	
+	<div class ="main">
+		<p>刮刮乐</p>			
+		<canvas id="can7"></canvas>
+	</div>
+	
+	<div class ="main">
+		<p>刮刮乐</p>			
+		<canvas id="can8"></canvas>
+	</div>
+	
+	<div class ="main">
+		<p>刮刮乐</p>			
+		<canvas id="can9"></canvas>
+	</div>
+	
+	<div class ="main">
+		<p>刮刮乐</p>			
+		<canvas id="can10"></canvas>
+	</div>
+</div>
+
+
+<script src="./Guaguale.js"></script>
+<script type="text/javascript">
+
+	var number_arr = new Array(10).fill(0);
+	
+	for (var i = 1; i < 11; i++) {
+		var can = document.querySelector("#can"+i);
+		render(can,number_arr);
+	}
+
+</script>
+
+</body>
+</html>
